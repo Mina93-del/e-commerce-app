@@ -14,7 +14,11 @@ html {
 body {
     font-family: "Work Sans", sans-serif;
     width: 100%;
+    overflow-x: hidden;
+
 }
+
+
 
 ul {
     list-style: none;
@@ -100,7 +104,7 @@ button.normal {
 
 @media (min-width : 1200px) {
     .container {
-        width: 1250px;
+        width: 1170px;
     }
 }
 
@@ -182,7 +186,7 @@ button.normal {
     }
 
     .header .titles .navbar.active {
-        right: -30px;
+        right: 0;
     }
 
     .header .titles .navbar li {
@@ -244,7 +248,6 @@ button.normal {
     }
 }
 
-.landing .container {}
 
 .landing .text-content {
     display: flex;
@@ -279,6 +282,21 @@ button.normal {
 
 }
 
+@media(max-width: 767px) {
+    .landing h1 {
+        font-size: 35px;
+    }
+
+    .landing h2 {
+        font-size: 35px;
+
+    }
+
+    .landing .text-content {
+        padding: 10px;
+    }
+}
+
 @keyframes typing {
     from {
         width: 0;
@@ -297,8 +315,7 @@ button.normal {
     align-items: center;
     background-size: cover;
     background-image: url(../img/button.png);
-
-    padding: 25px 80px 14px 65px;
+    padding: 25px 60px 14px 40px;
 }
 
 .landing a:hover h4 {
@@ -313,23 +330,36 @@ button.normal {
     transition: var(--main-transition);
 }
 
+@media (max-width: 767px) {
+    .landing a {
+        padding: 15px 30px;
+    }
+}
+
 /* features */
 .features {
-    padding-top: 90px;
+    padding-top: 50px;
     padding-bottom: var(--section-padding);
     position: relative;
 }
+
 
 .features .container .boxes {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
     position: relative;
     gap: 20px;
+
 }
 
 @media(max-width: 767px) {
     .features .container .boxes {
-        margin: 20px;
+        padding: 20px;
+        margin: 0;
+        grid-template-columns: repeat(auto-fill, minmax(170px, 170px));
+        justify-content: center;
+
+
     }
 }
 
@@ -850,13 +880,16 @@ button.normal {
 .news-letter .form {
     width: 50%;
     position: relative;
+    display: flex;
+    margin-right: 20px;
+
 }
 
 .news-letter .form form {
     width: 100%;
     display: flex;
     position: relative;
-    padding: 0 25px;
+
 }
 
 .news-letter .form .input {
@@ -877,7 +910,7 @@ button.normal {
     color: white;
     font-weight: bold;
     font-size: 15px;
-    padding: 15px 25px;
+    padding: 10px 17px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -918,7 +951,6 @@ button.normal {
 /* footer */
 .footer {
     padding: 70px 0 0;
-
     position: relative;
 }
 
