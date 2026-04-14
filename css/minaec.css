@@ -362,7 +362,7 @@ button.normal {
     }
 }
 
-.features .box {
+.features .box-feat {
     max-width: 180px;
     display: flex;
     flex-wrap: wrap;
@@ -378,15 +378,15 @@ button.normal {
     transition: var(--main-transition);
 }
 
-.features .box:hover {
+.features .box-feat:hover {
     transform: rotate(4deg);
 }
 
-.features .box .image {
+.features .box-feat .image {
     width: 100%;
 }
 
-.features .box .text {
+.features .box-feat .text {
     margin: 7px auto 15px;
     display: block;
     padding: 7px 13px;
@@ -1499,4 +1499,189 @@ marquee {
 
 .news-letter#news-about {
     margin-top: 60px;
+}
+
+/* contact */
+.contact-content {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    position: relative;
+}
+
+.contact-content .container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.contact-content .container .con-text {
+    margin-right: 15px;
+    padding: 10px 15px;
+    width: 45%;
+}
+
+.contact-content .container .con-text span {
+    color: #777;
+}
+
+.contact-content .container .con-text h2 {
+    margin: 15px 0;
+    font-size: 27px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.contact-content .container .con-text .details {
+    padding: 15px 0;
+}
+
+.contact-content .con-text .details div {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-content .con-text .details div i {
+    margin-right: 15px;
+}
+
+.contact-content .container .con-map {
+    width: 50%;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-content .container .con-map iframe {
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .contact-content .container {
+        flex-direction: column;
+    }
+
+    .contact-content .container .con-text {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .contact-content .container .con-text h2 {
+        font-size: 20px;
+
+    }
+
+    .contact-content .container .con-text .details div p {
+        font-size: 15px;
+    }
+
+    .contact-content .container .con-map {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
+.message-members {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    position: relative;
+
+}
+
+.message-members .container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    border: 1px solid #088178;
+    padding: 60px;
+
+}
+
+@media (max-width: 767px) {
+    .message-members .container {
+        padding: 40px;
+    }
+}
+
+.message-members .container .mess-form {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    align-items: flex-start;
+}
+
+
+
+.message-members .container .mess-form form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.message-members .container .mess-form span {
+    color: #777;
+}
+
+.message-members .container .mess-form h2 {
+    margin: 15px 0;
+    font-size: 27px;
+    line-height: 1.2;
+}
+
+.message-members .container .mess-form form input,
+.message-members .container .mess-form form textarea {
+    margin: 10px 0;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e1;
+    caret-color: #088178;
+}
+
+.message-members .container .mess-form button {
+    background-color: #088178;
+    color: white;
+}
+
+.message-members .container .mess-form button:hover {
+    background-color: #088179ca;
+
+}
+
+.message-members .container .member {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.message-members .container .member .mem {
+    display: flex;
+    padding-bottom: 25px;
+}
+
+.message-members .container .member .mem .image {
+    margin-right: 20px;
+}
+
+.message-members .container .member .mem p {
+    margin: 0;
+    padding: 5px;
+}
+
+@media (max-width: 767px) {
+    .message-members .container {
+        flex-direction: column;
+        border: none;
+    }
+
+    .message-members .container .mess-form {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .message-members .container .member {
+        width: 100%;
+        gap: 0;
+    }
 }
