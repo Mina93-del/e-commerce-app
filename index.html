@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mina-Ecommerce</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/minaec.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/all.min.css">
+
+
 </head>
 
 <body>
@@ -49,7 +52,65 @@
         </div>
 
     </div>
-    <div class="features" id="features">
+    <div class="slider">
+        <div class="container">
+            <div class="swiper mySwiper">
+                <div class=" swiper-wrapper">
+                    <div class="swiper-slide feature">
+                        <div class="box-feat">
+                            <div class="image"><img src="./img/f1.png" alt=""></div>
+                            <div class="text one">
+                                <h6>Free Shipping</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box-feat">
+                            <div class="image"><img src="./img/f2.png" alt=""></div>
+                            <div class="text two">
+                                <h6>Online Order</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box-feat">
+                            <div class="image"><img src="./img/f3.png" alt=""></div>
+                            <div class="text three">
+                                <h6>Save Money</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box-feat">
+                            <div class="image"><img src="./img/f4.png" alt=""></div>
+                            <div class="text four">
+                                <h6>Promotions</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box-feat">
+                            <div class="image"><img src="./img/f5.png" alt=""></div>
+                            <div class="text five">
+                                <h6>Happy Sell</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box-feat">
+                            <div class="image"><img src="./img/f6.png" alt=""></div>
+                            <div class="text sex">
+                                <h6>F24/7 Support</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- <div class="features" id="features">
         <div class="container">
             <div class="boxes">
                 <div class="box-feat">
@@ -91,7 +152,7 @@
             </div>
 
         </div>
-    </div>
+    </div> -->
     <div class="features-product" id="features-product">
         <div class="features-title">
             <h2 class="main-title">
@@ -528,7 +589,9 @@
             });
         })
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
+
 </body>
 
 </html>

@@ -11,3 +11,34 @@ document.addEventListener("click", (e) => {
         nav.classList.remove("active");
     }
 });
+
+    var swiper = new Swiper(".swiper", {
+        slidesPerView: 5,
+        spacebetween: 20 ,
+        breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    576: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    992: {
+      slidesPerView: 4,
+    },
+    1200: {
+      slidesPerView: 5,
+    },
+  },
+    //   pagination: {
+    //     el: ".swiper-pagination",
+    //     dynamicBullests: true ,
+    //     clickable: true
+    //   },
+      autoplay:{
+        delay:2500,
+      },
+      loop: true,
+    });
