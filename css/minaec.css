@@ -166,6 +166,10 @@ button.normal {
     .header .titles .mob {
         display: block;
     }
+
+    .header .titles .navbar li .shop-icon {
+        display: none;
+    }
 }
 
 @media(max-width: 767px) {
@@ -206,7 +210,9 @@ button.normal {
 
 .header .titles .navbar li a:hover,
 .header .titles .navbar li a.active,
-.header .titles .mob a:hover {
+.header .titles .mob a:hover,
+.header .titles .navbar li a#active,
+.header .titles .mob a#active {
     color: #088178;
 }
 
@@ -1347,6 +1353,13 @@ button.normal {
 .prodetails .container .tit-sect button {
     background-color: #088178;
     color: #fff;
+}
+
+.prodetails .container .tit-sect #butt-cart.active {
+    background-color: #737373;
+    color: #173432;
+    pointer-events: none;
+    font-weight: 600;
 }
 
 .prodetails .container .tit-sect span {
